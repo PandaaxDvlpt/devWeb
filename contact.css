@@ -6,11 +6,11 @@
     justify-content: center;
 }
  #contact {
-    background-color: rgba(255, 255, 255, 0.116);
+    background-color: rgba(110, 110, 110, 0.308);
     padding: 25px;
     margin: 50px 0;
 } #contact h3 {
-    color: rgba(236, 235, 235, 0.575);
+    color: rgba(236, 235, 235, 0.274);
 	display: block;
 	font-size: 30px;
 	font-weight: 400;
@@ -71,3 +71,20 @@
 
     * { box-sizing: border-box; }
 body { font: 16px Arial; }
+
+/*Documentation Hamburger*/
+.menu-hamburger {
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+} .menu-hamburger:hover {
+    opacity: 0.7; }
+    .menu-hamburger.is-active:hover {
+    opacity: 0.7; }
+    .menu-hamburger.is-active .hamburger-inner,
+    .menu-hamburger.is-active .hamburger-inner::before,
+    .menu-hamburger.is-active .hamburger-inner::after {
+    background-color: #000; 
+}
+  
