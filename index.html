@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DC - Home</title>
+</head>
+<body>
+    <nav class = "navbar">
+        <a href = "#" class= "logo">Dimitri C.</a>
+        <div class="nav-links "> 
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "me.html">About</a></li>
+                <li><a href = "jobs.html">Passions</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <img src="./images/menu-btn.png" alt="menu" class="menu-hamburger">
+    </nav>
+    <header></header>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>

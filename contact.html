@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class = "navbar">
+        <a href = "#" class= "logo">Dimitri C.</a>
+        <div class="nav-links "> 
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "me.html">About</a></li>
+                <li><a href = "jobs.html">Passions</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <img src="./images/menu-btn.png" alt="menu" class="menu-hamburger">
+    </nav>
+    <header></header>
+<div class="container">
+    <form id="contact" action="" method="post">
+        <h3>Contactez-moi</h3>
+        <h4>Contactez-moi pour plus d'informations</h4>
+        <fieldset>
+            <input placeholder="Votre nom" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Votre adresse email" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+            <input placeholder="Votre numéro de téléphone" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+            <textarea placeholder="Typez votre message ici...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Envoyer</button>
+        </fieldset>
+    </form>
+    </div>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+<body>
+    
+</body>
+</html>
