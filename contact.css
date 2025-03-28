@@ -4,11 +4,14 @@
     max-width: 600px;
     margin: 0 auto;
     justify-content: center;
+    z-index: 1;
 }
  #contact {
     background-color: rgba(110, 110, 110, 0.308);
     padding: 25px;
     margin: 50px 0;
+    z-index: 0;
+    border-radius: 10px;
 } #contact h3 {
     color: rgba(236, 235, 235, 0.274);
 	display: block;
@@ -35,13 +38,15 @@
     margin:0 0 5px;
     padding:10px;
     color: white;
+    z-index: 0;
 }
 .container {
     position:fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1000;
+    z-index: 3;
+    
 }
  #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
 	transition:border-color 0.3s ease-in-out;
