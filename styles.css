@@ -16,17 +16,21 @@
     width: 100%;
     align-items: center;
     box-sizing: border-box;
+    z-index: 10;
 } .navbar a {
     color: white;
+    z-index: 10;
 } .navbar .logo {
     font-size: 35px;
     font-weight: bold;
     z-index: 1100;
 } .navbar .nav-links ul {
     display: flex;
+    z-index: 10;
 } .navbar .nav-links ul li {
     margin: 25px 0;
     font-size: 1.2em;
+    z-index: 10;
 } .navbar .nav-links ul li.active a {
     color: rgb(255, 0, 0)
 } .navbar .menu-hamburger {
@@ -35,8 +39,33 @@
     right: 50px;
     top: 50px;
     z-index: 1200;
-
-} @media screen and (max-width: 880px) {
+} div.content {
+    position: absolute; /* Garde le positionnement relatif */
+    z-index: 5; /* Plus bas pour qu'ils passent derrière la navbar et son animation */
+    color: white;
+    text-align: center;
+    transition: 2s;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    top: 45%; /* Centre verticalement */
+    left: 50%;
+} h1 {
+    font-size: 2em;
+    margin:0; /* Ajuste si nécessaire pour éviter qu'il soit masqué */
+} h2 {
+    font-size: 1em;
+    margin: 10px 0; /* Ajuste pour espacer le h2 du h1 */
+} .btn {
+    color: white;
+    margin-top: 20px; /* Ajoute un espace au-dessus du bouton */
+    padding: 10px 20px; /* Ajoute du padding pour un meilleur rendu */
+    background-color: rgba(0, 0, 0, 0.507); /* Couleur de fond du bouton */
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    text-align: center;
+}  @media screen and (max-width: 880px) {
     .navbar .menu-hamburger {
         display: block;
     } .navbar {
@@ -59,14 +88,17 @@
     align-items: center;
     margin-left: -100%;
     transition: all 0.5s;
-    z-index: 1100;
 } .mobile-menu {
     margin-left: 0;
-}
- .nav-links ul {
+
+} .nav-links ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+} .navlinks .mobile-menu{
+    position: absolute;
+    z-index: 9;
 } .menu-hamburger {
     top: 0;
     right: 0;
@@ -108,17 +140,13 @@
 	to { 
 		-webkit-transform: translate3d(1000px, 0px, 0px);
 	}
-}
-
-.background-container{
+}.background-container{
 	position: fixed;
 	top: 0;
 	left:0;
 	bottom: 0;
 	right: 0;
-}
-
-.stars {
+}.stars {
  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
  position: absolute;
 	top: 0;
@@ -127,9 +155,7 @@
 	right: 0;
 	display: block;
   	z-index: 0;
-}
-
-.twinkling{
+}.twinkling{
 	width:10000px;
 	height: 100%;
 	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
@@ -146,9 +172,7 @@
      -webkit-animation:move-background 70s linear infinite;
     animation:move-background 70s linear infinite;
 	
-}
-
-.clouds{
+} .clouds{
 	width:10000px;
 	height: 100%;
 	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
@@ -184,4 +208,4 @@
     .menu-hamburger.is-active .hamburger-inner::before,
     .menu-hamburger.is-active .hamburger-inner::after {
     background-color: #000; 
-}
+}  
