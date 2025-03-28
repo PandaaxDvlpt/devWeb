@@ -58,14 +58,14 @@
     margin: 10px 0; /* Ajuste pour espacer le h2 du h1 */
 } .btn {
     color: white;
-    margin-top: 20px; /* Ajoute un espace au-dessus du bouton */
+    margin-top: 60px; /* Ajoute un espace au-dessus du bouton */
     padding: 10px 20px; /* Ajoute du padding pour un meilleur rendu */
     background-color: rgba(0, 0, 0, 0.507); /* Couleur de fond du bouton */
     border: none;
-    border-radius: 5px; /* Coins arrondis */
+    border-radius: 10px; /* Coins arrondis */
     cursor: pointer;
     text-align: center;
-}  @media screen and (max-width: 880px) {
+}  @media screen and (max-width: 180px) {
     .navbar .menu-hamburger {
         display: block;
     } .navbar {
@@ -208,4 +208,14 @@
     .menu-hamburger.is-active .hamburger-inner::before,
     .menu-hamburger.is-active .hamburger-inner::after {
     background-color: #000; 
-}  
+}  footer {
+    position: fixed; /* Fixe le footer en bas de la page */
+    bottom: 0; /* Aligne le footer en bas */
+    left: 0; /* Aligne le footer à gauche */
+    width: 100%; /* Prend toute la largeur de la page */
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    padding: 10px; /* Ajoute un peu d'espace autour du texte */
+    z-index: 10;
+}

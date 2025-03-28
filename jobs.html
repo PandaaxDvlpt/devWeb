@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DC - Home</title>
+</head>
+<body>
+    <div class="background-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="" class="moon">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>        
+    <nav class = "navbar">
+        <a href = "#" class= "logo">Dimitri C.</a>
+        <div class="nav-links "> 
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "me.html">About</a></li>
+                <li><a href = "jobs.html">Passions</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+        </div>
+    <img src="./images/menu-btn.png" alt="menu" class="menu-hamburger">
+</nav>
+        <div class="content">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eum voluptatibus alias sunt, ullam doloribus temporibus facere vero totam a incidunt quod ab, libero id illo? Asperiores molestias illo nemo.</h1>
+            <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat voluptatum, totam, porro dolorem aut officia eum itaque perspiciatis natus cupiditate quidem. Quidem voluptas facilis temporibus sint fuga doloribus alias nemo.</h2>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025-2026 Dimitri C. - All rights reserved</p>
+    </footer>   
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
