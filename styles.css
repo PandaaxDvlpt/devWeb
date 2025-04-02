@@ -5,6 +5,8 @@
     list-style: none;
 } body {
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
 } header {
     height: 100vh;
     width: 100vw;
@@ -146,6 +148,7 @@
 	left:0;
 	bottom: 0;
 	right: 0;
+    z-index: 0;
 }.stars {
  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
  position: absolute;
@@ -165,13 +168,7 @@
     top: 0;
     bottom: 0;
     z-index: 2;
-    
-    -moz-animation:move-background 70s linear infinite;
-    -ms-animation:move-background 70s linear infinite;
-    -o-animation:move-background 70s linear infinite;
-     -webkit-animation:move-background 70s linear infinite;
-    animation:move-background 70s linear infinite;
-	
+    animation: move-background 70s linear infinite;
 } .clouds{
 	width:10000px;
 	height: 100%;
@@ -182,12 +179,7 @@
     top: 0;
     bottom: 0;
     z-index: 3;
-
-    -moz-animation:move-background 150s linear infinite;
-    -ms-animation:move-background 150s linear infinite;
-    -o-animation:move-background 150s linear infinite;
-    -webkit-animation:move-background 150s linear infinite;
-    animation:move-background 150s linear infinite;
+    animation: move-background 150s linear infinite;
 }
 .moon{
   height: 70vh;
