@@ -10,10 +10,10 @@ div.content p {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 1024px) {
     div.content p {
         font-size: 0.8em;
         padding: 4px;
         margin: 5px;
     }
-} 
+}
