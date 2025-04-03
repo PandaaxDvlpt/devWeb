@@ -4,50 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="jobs.css">
-    <title>DC - Passions</title>
+    <title>DC - Passions</title>    
 </head>
 <body>
+    <h1 class="title">Mes Passions</h1>
     <div class="background-container">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="" class="moon">
         <div class="stars"></div>
         <div class="twinkling"></div>
         <div class="clouds"></div>        
-        <nav class="navbar">
-            <a href="index.html" class="logo">Dimitri C.</a>
-            <div class="nav-links"> 
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="me.html">About</a></li>
-                    <li class="active"><a href="jobs.html">Passions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <img src="./images/menu-btn.png" alt="menu" class="menu-hamburger">
-        </nav>
-        <div class="content">
-            <h1>Mes Passions</h1>
-            <div class="image-container">
-                <div class="image-card">
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="Développement Web">
-                    <div class="caption">
-                        <h3>Développement Web</h3>
-                        <p>La création de sites web et d'applications est ma passion principale</p>
-                    </div>
-                </div>
-                <div class="image-card">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="Cybersécurité">
-                    <div class="caption">
-                        <h3>Cybersécurité</h3>
-                        <p>Un domaine fascinant que j'aimerais explorer davantage</p>
-                    </div>
-                </div>
-            </div>
+    <nav class = "navbar">
+        <a href = "index.html" class= "logo">Dimitri C.</a>
+        <div class="nav-links "> 
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "me.html">About</a></li>
+                <li><a href = "jobs.html">Passions</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
         </div>
+    <img src="./images/menu-btn.png" alt="menu" class="menu-hamburger">
+</nav>
+    <div class="cimg">
+        <div class="image-container">
+            <img src="./images/dev.jpg" alt="dev" class="dev">
+            <div class="overlay-text">Développement Web</div>
+        </div>
+    <div class="image-container">
+        <img src="./images/pw.jpg" alt="pw" class="pw">
+        <div class="overlay-text">Powerlifting</div>
     </div>
-    <footer>
+</div>
+<footer>
         <p>&copy; 2025-2026 Dimitri C. - All rights reserved</p>
     </footer>   
+</body>
     <script>
         const menuHamburger = document.querySelector(".menu-hamburger")
         const navLinks = document.querySelector(".nav-links")
@@ -56,5 +47,4 @@
         navLinks.classList.toggle('mobile-menu')
         })
     </script>
-</body>
 </html>
