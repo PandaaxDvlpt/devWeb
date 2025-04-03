@@ -210,4 +210,6 @@
     text-align: center; /* Centre le texte */
     padding: 10px; /* Ajoute un peu d'espace autour du texte */
     z-index: 10;
+} .btn:hover {
+    background-color: rgba(0, 0, 0, 1);
 }
